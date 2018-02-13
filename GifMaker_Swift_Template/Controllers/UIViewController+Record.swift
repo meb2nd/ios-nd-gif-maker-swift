@@ -34,16 +34,20 @@ extension UIViewController {
         
         let regift = Regift(sourceFileURL: videoURL, destinationFileURL: nil, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount)
         
-        let gifURL = regift.createGif()
+        if let gifURL = regift.createGif() {
+            
+            let gif = Gif(url: gifURL, videoURL: videoURL, caption: nil)
+            
+            displayGIF(gif: gif)
+        }
         
-        displayGIF(url: gifURL!)
     }
     
-    func displayGIF(url: URL) {
+    func displayGIF(gif: Gif) {
         
         let gifEditorVC = storyboard?.instantiateViewController(withIdentifier: "GifEditorViewController") as! GifEditorViewController
         
-        gifEditorVC.gifURL = url
+        gifEditorVC.gif = gif
         
         navigationController?.pushViewController(gifEditorVC, animated: true)
         

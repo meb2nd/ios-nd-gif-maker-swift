@@ -15,9 +15,11 @@ class GifEditorViewController: UIViewController {
     
     @IBOutlet weak var gifImageView: UIImageView!
     
+    @IBOutlet weak var captionTextField: UITextField!
+    
     //MARK:- Properties
     
-    var gifURL: URL? = nil
+    var gif: Gif? = nil
     
     
     override func viewDidLoad() {
@@ -30,9 +32,10 @@ class GifEditorViewController: UIViewController {
         
         super.viewWillAppear(animated)
         
-        if let gifURL = gifURL {
+        if let gif = gif,
+            let url = gif.url {
             
-            let image = UIImage.gif(url: gifURL.absoluteString)
+            let image = UIImage.gif(url: url.absoluteString)
             gifImageView.image = image
         }
     }

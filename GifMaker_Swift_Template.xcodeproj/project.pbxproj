@@ -12,6 +12,7 @@
 		12CD67CD20334B4D00D83F86 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD67CC20334B4D00D83F86 /* PreviewViewController.swift */; };
 		12CD67CF20334D3600D83F86 /* UIViewController+Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD67CE20334D3600D83F86 /* UIViewController+Record.swift */; };
 		12CD67D1203359E500D83F86 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD67D0203359E500D83F86 /* UIImage+Gif.swift */; };
+		12CD67D420336D5A00D83F86 /* GIf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD67D320336D5A00D83F86 /* GIf.swift */; };
 		A93B3B081D2D3F7900BE1662 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A93B3B041D2D3F7900BE1662 /* LaunchScreen.xib */; };
 		A93B3B091D2D3F7900BE1662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93B3B061D2D3F7900BE1662 /* Main.storyboard */; };
 		EDDFC4DC1CE261A600A586CA /* tinaFeyHiFive.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDDFC4DB1CE261A600A586CA /* tinaFeyHiFive.gif */; };
@@ -29,6 +30,7 @@
 		12CD67CC20334B4D00D83F86 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = Controllers/PreviewViewController.swift; sourceTree = "<group>"; };
 		12CD67CE20334D3600D83F86 /* UIViewController+Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Record.swift"; path = "Controllers/UIViewController+Record.swift"; sourceTree = "<group>"; };
 		12CD67D0203359E500D83F86 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "Controllers/UIImage+Gif.swift"; sourceTree = "<group>"; };
+		12CD67D320336D5A00D83F86 /* GIf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIf.swift; sourceTree = "<group>"; };
 		A93B3B051D2D3F7900BE1662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A93B3B071D2D3F7900BE1662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDDFC4DB1CE261A600A586CA /* tinaFeyHiFive.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tinaFeyHiFive.gif; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 				12CD67D0203359E500D83F86 /* UIImage+Gif.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		12CD67D220336CF900D83F86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12CD67D320336D5A00D83F86 /* GIf.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A94CC3D61D21C84C00DC758E /* Supporting Files */ = {
@@ -108,6 +118,7 @@
 				A94CC3D71D21C85A00DC758E /* Assets */,
 				A94CC3D61D21C84C00DC758E /* Supporting Files */,
 				EDFAA9221CDA9C4700D2CB08 /* Regift Files */,
+				12CD67D220336CF900D83F86 /* Models */,
 				12CD67C920334AE300D83F86 /* Controllers */,
 			);
 			path = GifMaker_Swift_Template;
@@ -198,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CD67D420336D5A00D83F86 /* GIf.swift in Sources */,
 				EDFAA9201CDA9C3100D2CB08 /* Regift.swift in Sources */,
 				12CD67C820334ACE00D83F86 /* WelcomeViewController.swift in Sources */,
 				12CD67CD20334B4D00D83F86 /* PreviewViewController.swift in Sources */,
